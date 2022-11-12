@@ -27,11 +27,11 @@ def pregunta_01():
     # Imprima las dimensiones de `X`
     print(X.shape)
 
-    # Transforme `y` a un array de numpy usando reshape
-    y_reshaped = np.reshape(y,-1)
+   # Transforme `y` a un array de numpy usando reshape
+    y_reshaped = y.to_numpy().reshape(y.shape[0],1)
 
     # Trasforme `X` a un array de numpy usando reshape
-    X_reshaped = np.reshape(X, -1)
+    X_reshaped = X.to_numpy().reshape(X.shape[0],1)
 
     # Imprima las nuevas dimensiones de `y`
     print(y_reshaped.shape)
