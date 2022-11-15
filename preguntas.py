@@ -62,7 +62,7 @@ def pregunta_02():
     print(type(df['fertility']))
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
-    print(df['GDP'].corr(df['life']).round(5))
+    print(df['GDP'].corr(df['life']).round(4))
 
 
 def pregunta_03():
@@ -76,7 +76,7 @@ def pregunta_03():
 
     # Asigne a la variable los valores de la columna `fertility`
     X_fertility = df['fertility'].copy()
-    X_fertility = X_fertility.to_numpy().reshape(X.shape[0],1)
+    X_fertility = X_fertility.to_numpy().reshape(X_fertility.shape[0],1)
 
     # Asigne a la variable los valores de la columna `life`
     y_life = df['life'].copy()
@@ -124,7 +124,7 @@ def pregunta_04():
 
     # Asigne a la variable los valores de la columna `fertility`
     X_fertility = df['fertility'].copy()
-    X_fertility = X_fertility.to_numpy().reshape(X.shape[0],1)
+    X_fertility = X_fertility.to_numpy().reshape(X_fertility.shape[0],1)
 
     # Asigne a la variable los valores de la columna `life`
     y_life = df['life'].copy()
